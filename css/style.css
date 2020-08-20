@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/*font-family: 'Source Sans Pro', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg);
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  background: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.logo,
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-cont {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  z-index: 3;
+}
+
+.form-cont form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.form-cont form input {
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: calc(100% - 100px);
+  padding: 0 10px;
+}
+
+.btn {
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  background: var(--primary-color);
+  font-weight: 600;
+  border: none;
+  height: 100%;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.message-cont {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 3.2rem;
+  padding-bottom: 3rem;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow-y: scroll;
+
+}
+
+.message {
+  padding: 10px;
+  max-width: 80%;
+  border: 1px solid #332222;
+  text-align: justify;
+  border-radius: 5px;
+  margin: 7px 0;
+  overflow-wrap: break-word;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+
+.right {
+  float: right;
+  clear: both;
+  background: var(--secondary-color);
+  color: var(--text-dark-color);
+  border-bottom-right-radius: 0;
+  border: none;
+  transform-origin: bottom right;
+
+}
+
+.left {
+  float: left;
+  clear: both;
+  background: var(--primary-color);
+  color: var(--text-color);
+  border-top-left-radius: 0;
+  border: none;
+  transform-origin: top left;
+}
+
+.msg-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg-header .Username {
+  font-size: 18px;
+  color: yellow;
+}
+
+.msg-header .time {
+  color: #ccc;
+}
+
+.right .msg-header .time {
+  color: #234456;
+}
+
+.right .msg-header .Username {
+  color: #234567;
+}
+
+
+@media (max-width:500px) {
+  .message {
+    max-width: 90%;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#showUser {
+  margin-left: 3px;
+}
