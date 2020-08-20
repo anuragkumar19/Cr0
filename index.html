@@ -1,1 +1,58 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebChatBox - Chatbox by WebChatBox | WebChatBox.netlify.app</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Fontawesome CDN CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-comments fa-2x"></i>
+        &nbsp;WCB
+      </div>
+      <div class="username">
+        <i class="fas fa-user-circle fa-2x"></i>
+        <span id="showUser">&nbsp;Anurag</span>
+      </div>
+    </nav>
+
+    <div class="message-cont" id="msgCont">
+      <div class="message left">
+        <div class="msg-header">
+          <span class="Username">Chatbot</span><span class="time">Just now</span>
+        </div>
+        <p>
+          Welcome to WebChatBox!!!
+        </p>
+      </div>
+    </div>
+
+    <div class="form-cont">
+      <form id="form">
+        <input type="text" name="msg" id="msg" autofocus>
+        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i>&nbsp;Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+  <!-- SocketIO Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+  <!-- Main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>
